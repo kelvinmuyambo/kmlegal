@@ -1,21 +1,101 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="bg-top navbar-light">
+  <div class="container">
+    <div class="row no-gutters d-flex align-items-center align-items-stretch">
+      <div class="col-md-4 d-flex align-items-center">
+        <a class="navbar-brand" href="/">
+          <img src="assets/images/logo_wide.png" style="width: 5em;" />
+        </a>
+      </div>
+      <div class="col-lg-8 d-block">
+        <div class="row d-flex">
+          <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span>
+            </div>
+            <div class="text">
+              <span>Email</span>
+              <span>kamusasamusendo@gmail.com</span>
+            </div>
+          </div>
+          <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+            <div class="text">
+              <span>Call</span>
+              <span>+263 4 770148</span>
+            </div>
+          </div>
+          <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-fax"></span></div>
+            <div class="text">
+              <span>Fax</span>
+              <span>+263 242 771825</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container d-flex align-items-center">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <form action="#" class="searchform order-lg-last" style="visibility: hidden;">
+        <div class="form-group d-flex">
+          <input type="text" class="form-control pl-3" placeholder="Search">
+          <button type="submit" placeholder="" class="form-control search">
+            <span class="ion-ios-search"></span>
+          </button>
+        </div>
+      </form>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a [routerLink]="['/home']" class="nav-link pl-0">Home</a></li>
+          <li class="nav-item"><a [routerLink]="['/about']" class="nav-link">About</a></li>
+          <li class="nav-item"><a [routerLink]="['/service']" routerLinkActive="router-link-active"
+              class="nav-link">Services</a></li>
+          <li class="nav-item"><a [routerLink]="['/partner']" class="nav-link">Partners</a></li>
+          <!--<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>-->
+          <li class="nav-item"><a [routerLink]="['/contact']" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
 <router-outlet></router-outlet>
+
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 col-lg-6">
+        <div class="ftco-footer-widget mb-5">
+          <h2 class="ftco-heading-2">Have a Question?</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li>
+                <span class="icon icon-map-marker"></span>
+                <span class="text">No 279 Hebert Chitepo Avenue, Harare</span></li>
+              <li><a href="#"><span class="icon icon-phone"></span><span class="text">+263 4 770 148</span></a></li>
+              <li><a href="#"><span class="icon icon-fax"></span><span class="text">+263 242 771825</span></a></li>
+              <li><a href="#"><span class="icon icon-envelope"></span><span
+                    class="text">kamusasaandmusendo@gmail.com</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 text-center">
+        <div class="ftco-footer-widget mb-5">
+          <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+          <ul class="ftco-footer-social w-100 list-unstyled float-md-left float-lft mt-3">
+            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.facebook.com/Kamusasa-and-Musendo-203188533184647/"><span class="icon-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
